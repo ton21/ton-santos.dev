@@ -1,5 +1,4 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,5 +6,115 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+  <!-- Hero Section -->
+  <section
+    id='hero'
+    class='min-h-screen bg-white text-gray-800 flex flex-col justify-center items-center px-6'
+  >
+    <h1 class='text-4xl md:text-6xl font-bold mb-4 text-center'>
+      Olá, eu sou Ton Santos
+    </h1>
+    <p class='text-lg md:text-xl text-center mb-6 max-w-xl'>
+      Desenvolvedor Front-End & Mobile com 15+ anos de experiência. Especialista
+      em React, React Native, HTML/CSS e criação de sites responsivos e bonitos.
+    </p>
+    <a
+      href='#contact'
+      class='bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition'
+      >Fale comigo</a
+    >
+  </section>
+
+  <!-- About Section -->
+  <section id='about' class='py-20 px-6 bg-gray-100 text-gray-800'>
+    <div class='max-w-4xl mx-auto text-center'>
+      <h2 class='text-3xl font-semibold mb-4'>Sobre mim</h2>
+      <p class='text-lg leading-relaxed'>
+        Trabalho há mais de 15 anos desenvolvendo interfaces web e mobile. Tenho
+        experiência com React, React Native, Tailwind, integração com APIs e
+        construção de temas personalizados para WordPress. Gosto de entregar
+        projetos bem-feitos, funcionais e com excelente experiência para o
+        usuário.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id='services' class='py-20 px-6 text-gray-800'>
+    <div class='max-w-5xl mx-auto text-center'>
+      <h2 class='text-3xl font-semibold mb-10'>Serviços</h2>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-8'>
+        <div class='bg-white rounded-2xl p-6 shadow'>
+          <h3 class='text-xl font-bold mb-2'>Sites Responsivos</h3>
+          <p>
+            Criação de sites estáticos modernos com design atrativo e boa
+            performance.
+          </p>
+        </div>
+        <div class='bg-white rounded-2xl p-6 shadow'>
+          <h3 class='text-xl font-bold mb-2'>Apps com React Native</h3>
+          <p>
+            Desenvolvimento de aplicativos mobile para iOS e Android com código
+            limpo e fluído.
+          </p>
+        </div>
+        <div class='bg-white rounded-2xl p-6 shadow'>
+          <h3 class='text-xl font-bold mb-2'>WordPress Custom</h3>
+          <p>
+            Transformação de layouts Figma em temas WordPress otimizados e
+            leves.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Fake Section -->
+  <section id='portfolio' class='py-20 px-6 bg-gray-100 text-gray-800'>
+    <div class='max-w-5xl mx-auto text-center'>
+      <h2 class='text-3xl font-semibold mb-10'>Projetos</h2>
+      <div class='grid grid-cols-1 md:grid-cols-2 gap-8'>
+        <div class='bg-white p-4 rounded-xl shadow'>
+          <img
+            src='/images/project1.jpg'
+            alt='Projeto 1'
+            class='rounded mb-4'
+          />
+          <h3 class='text-lg font-bold'>Landing Page para Fintech</h3>
+          <p>Site moderno e responsivo com foco em conversão e performance.</p>
+        </div>
+        <div class='bg-white p-4 rounded-xl shadow'>
+          <img
+            src='/images/project2.jpg'
+            alt='Projeto 2'
+            class='rounded mb-4'
+          />
+          <h3 class='text-lg font-bold'>App Mobile para Eventos</h3>
+          <p>
+            App híbrido com React Native, autenticação e notificações em tempo
+            real.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id='contact' class='py-20 px-6 text-gray-800'>
+    <div class='max-w-xl mx-auto text-center'>
+      <h2 class='text-3xl font-semibold mb-6'>Entre em Contato</h2>
+      <p class='mb-6'>Tem uma ideia ou projeto em mente? Vamos conversar.</p>
+      <a
+        href='mailto:contato@tonsantos.dev'
+        class='bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition'
+      >
+        contato@tonsantos.dev
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class='py-10 bg-white text-center text-gray-600'>
+    <p>&copy; 2025 Ton Santos. Todos os direitos reservados.</p>
+  </footer>
 </Layout>
